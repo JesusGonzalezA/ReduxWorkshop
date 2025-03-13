@@ -1,0 +1,46 @@
+.wrapper {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+
+    background-color: aliceblue;
+
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .buttonWrapper, .inputWrapper {
+        display: flex;
+        gap: 1.5rem;
+        margin: 1rem;
+    }
+
+    button, input {
+        box-sizing: border-box;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        width: 10rem;
+
+        border: solid 1px black;
+        border-radius: 5px;
+
+        &:is(button) {
+            background-color: rgb(31, 31, 31);
+            color: rgb(243, 243, 243);
+
+            &:hover {
+                background-color: yellow;
+                color: black;
+            }
+        }
+
+        &:focus {
+            outline: solid blue 3px;
+            outline-offset: 3px;
+            outline-style: dashed;
+        }
+    }
+}
